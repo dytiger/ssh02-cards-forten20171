@@ -2,11 +2,8 @@ package org.forten.cards.entity;
 
 import org.forten.cards.entity.enums.CardStatus;
 import org.forten.cards.entity.enums.CardType;
-import org.hibernate.validator.constraints.NotBlank;
 
 import javax.persistence.*;
-import javax.validation.ValidationException;
-import javax.validation.constraints.Min;
 import java.util.Date;
 
 /**

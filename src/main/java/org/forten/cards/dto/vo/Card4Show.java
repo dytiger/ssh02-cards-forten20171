@@ -4,7 +4,6 @@ import org.forten.cards.entity.enums.CardStatus;
 import org.forten.cards.entity.enums.CardType;
 import org.forten.utils.common.DateUtil;
 
-import java.text.NumberFormat;
 import java.util.Date;
 
 /**

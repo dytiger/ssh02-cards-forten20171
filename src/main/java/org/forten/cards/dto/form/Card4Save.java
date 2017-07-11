@@ -5,9 +5,7 @@ import org.forten.utils.common.EnumUtil;
 import org.forten.utils.system.ValidateException;
 import org.hibernate.validator.constraints.NotBlank;
 
-import javax.validation.ValidationException;
 import javax.validation.constraints.Min;
-import java.util.Arrays;
 
 /**
  * Created by Administrator on 2017/7/11.

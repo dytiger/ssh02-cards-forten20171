@@ -1,12 +1,10 @@
 package org.forten.cards.dto.form;
 
-import org.forten.cards.entity.enums.CardStatus;
 import org.forten.cards.entity.enums.CardType;
 import org.forten.utils.common.EnumUtil;
 import org.forten.utils.system.ValidateException;
 import org.hibernate.validator.constraints.NotBlank;
 
-import javax.validation.ValidationException;
 import javax.validation.constraints.Min;
 
 /**
