@@ -13,7 +13,7 @@
 	<!-- 读取项目中特定位置上的属性文件 -->
 	<!-- 一旦读取成功，就可以使用${属性名}方式得到属性的值 -->
 	<context:property-placeholder location="classpath*:/system/*.properties" />
-	<context:component-scan base-package="org.forten.si.bo,org.forten.si.dao">
+	<context:component-scan base-package="org.forten.cards.bo,org.forten.dao">
 		<context:include-filter type="annotation" expression="org.springframework.stereotype.Repository" />
 		<context:include-filter type="annotation" expression="org.springframework.stereotype.Service" />
 	</context:component-scan>
