@@ -2,6 +2,7 @@ package org.forten.cards.action;
 
 import org.forten.cards.bo.CardBo;
 import org.forten.cards.dto.form.Card4Save;
+import org.forten.cards.dto.form.Card4Update;
 import org.forten.cards.dto.qo.CardQo;
 import org.forten.cards.dto.ro.Message;
 import org.forten.cards.dto.ro.RoWithPage;
@@ -31,5 +32,10 @@ public class CardAction {
     public @ResponseBody
     RoWithPage<Card4Show> list(@RequestBody CardQo qo){
         return bo.queryBy(qo);
+    }
+
+    @RequestMapping("/card/update.do")
+    public @ResponseBody Message update(@RequestBody Card4Update dto){
+        return bo.doUpdate(dto);
     }
 }

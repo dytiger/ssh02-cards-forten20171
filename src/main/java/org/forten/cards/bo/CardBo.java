@@ -54,7 +54,7 @@ public class CardBo {
                 e.printStackTrace();
             }
             log.error("卡信息保存失败", e);
-            return Message.info("保存失败");
+            return Message.error("保存失败");
         }
     }
 
@@ -78,7 +78,7 @@ public class CardBo {
             params.put("status", status);
         }
 
-        log.debug("符合条件数据的HQL语句：[" + countHql + "]");
+        log.debug("统计符合条件数据总量的HQL语句：[" + countHql + "]");
         long count = dao.findOneBy(countHql, params);
         if (count == 0) {
             return RoWithPage.EMPTY_RO;

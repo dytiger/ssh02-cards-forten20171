@@ -2,6 +2,7 @@ package org.forten.cards.dto.form;
 
 import org.forten.cards.entity.enums.CardType;
 import org.forten.utils.common.EnumUtil;
+import org.forten.utils.common.StringUtil;
 import org.forten.utils.system.ValidateException;
 import org.hibernate.validator.constraints.NotBlank;
 
@@ -56,7 +57,7 @@ public class Card4Save {
     }
 
     public CardType getType() {
-        return EnumUtil.getEnumByName(CardType.class,typeName);
+        return StringUtil.hasText(typeName)?EnumUtil.getEnumByName(CardType.class,typeName):null;
     }
 
     public int getTimes() {
